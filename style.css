@@ -4,79 +4,143 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-.button_p1{
+
+.button_p1 {
     background-color: #E50914;
     border: 2px solid #E50914;
     padding: 10px;
     border-radius: 4px;
     width: 90px;
     color: white;
+    cursor: pointer;
 }
-
+.c-w{
+    color: white;
+}
 body {
     background-color: black;
     height: 100vh;
 }
-.h-50{
+
+.h-50 {
     font-size: 50px;
+    text-align: center;
 }
-.h-20{
+.w-40{
+    font-weight: 800;
+}
+.h-20 {
     font-size: 20px;
+    text-align: center;
 }
-.container{
-    max-width: 1450px;
+
+.container {
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 1;
 }
-.navbar{
+
+.main_header {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    border-bottom: 10px solid rgb(39, 39, 39);
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0,.7);
+}
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px;
-    padding-top: 10px;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
 }
-#logo_net{
+
+#logo_net {
     width: 150px;
-    height: 100%;
 }
-#drop{
+
+#drop {
     background-color: black;
-    opacity: .7;
-    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    color: white;
     padding: 10px;
     width: 120px;
     border: 2px solid grey;
     border-radius: 4px;
     margin-right: 10px;
 }
-.contents{
+
+.contents {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    gap: 20px;
+    left: 50%;
+    margin-top: 270px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
-.heading{
+
+.heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.subscribe{
+
+.subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.subscribe .emailaddress{
-    background-color: grey ;
+
+.subscribe .emailaddress {
+    background-color: rgba(48, 47, 47, 0.5);
     color: white;
-    opacity: .3;
     padding: 12px;
     width: 300px;
+    border: 1px solid grey;
+    border-radius: 4px;
 }
-.button1{
+
+.button1 {
     width: 120px;
     padding: 12px;
 }
-.button hq
+
+.background img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+.tv_contents{
+    position: relative;
+}
+.video {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.tv_contents .image {
+    position: absolute;
+    z-index: 2;
+}
